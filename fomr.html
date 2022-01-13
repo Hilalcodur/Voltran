@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+
+<body>
+
+    <!--FORM-->
+    <form action="result.html" method="GET" name="myform">
+        <div>
+            <label for="cars">Choose a car : </label>
+            <br>
+            <select name="cars-select" id="cars" size="8" multiple required>
+                <!--Option 1-->
+                <optgroup label="Expensive Cars">
+                    <option value="porche">Porche</option>
+                    <option value="masserati">Masserati</option>
+                    <option value="ferrari">Ferrari</option>
+                </optgroup>
+                <!-- Option 2-->
+                <optgroup label="Poor Car">
+                    <option value="kartal-88">Kartal-88</option>
+                    <option value="murat-131">Murat 131</option>
+                    <option value="lada*samara">Lada Samara</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <br /><br />
+        <div>
+            <label for="message">Enter your comment here : </label>
+            <br>
+            <!--style="width: 200px; height: 200px;"-->
+            <textarea name="comment" id="message" placeholder="Enter sth here..." cols="30" rows="10" maxlength="9"
+                style="resize: none;"></textarea>
+
+            <br><br>
+
+
+            <div>
+                <label for="mybrowser">Browser : </label>
+                <br />
+                <input type="text" name="browser-option" id="mybrowser" list="browsers" required />
+
+                <datalist id="browsers">
+                    <option value="Chrome"></option>
+                    <option value="mozilla"></option>
+                    <option value="safari"></option>
+                    <option value="brave"></option>
+                    <option value="OPERA"></option>
+                </datalist>
+
+            </div>
+        </div>
+        <br /><br />
+
+        <fieldset style="width: 50%;">
+            <legend>Personal Info</legend>
+            <label for="firstname">First Name : </label>
+            <input type="text" name="name" id="firsname" placeholder="Name...">
+            <label for="lastname">Last Name :</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Surname...">
+
+        </fieldset>
+        <input type="submit" value="SEND">
+    </form>
+
+</body>
+
+</html>
